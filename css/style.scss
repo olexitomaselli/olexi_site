@@ -1,0 +1,154 @@
+@import "./font";
+@import "./navBar";
+@import "./media";
+@import "./backGround";
+@import "./skills";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #1d1d1d;  
+    background: -webkit-linear-gradient(to left, #202020, #000000); 
+}
+
+.row {
+    --bs-gutter-x: none !important;
+}
+
+.container-top-section {
+    display: flex;
+    justify-content: center;
+}
+
+.page-outer {
+    font-family: 'Permanent Marker';
+    margin-left: 1.5%;
+    color: #72757e;
+    margin-top: 5%;
+    font-size: 1.6vh;
+}
+
+.page-down {
+    font-family: 'Permanent Marker';
+    justify-content: end;
+    color: #72757e;
+    font-size: 1.6vh;
+    right: 0;
+}
+
+/* H1 settings */
+.top-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-section-text h1{
+    font-family: 'Black Han Sans';
+    font-size: 6vw;
+    color: white;
+    margin-top: 49%;
+}
+
+.top-tags:after {
+    content: '<body>';
+    color: #72757e;
+    font-size: 4vw;
+    position: absolute;
+    margin-left: 10%;
+}
+
+.top-tags2::before {
+    content: '</body>';
+    color: #72757e;
+    font-size: 4vw;
+    position: absolute;
+    margin-right: 0;
+    right: 10%;
+}
+
+h1::before {
+    font-family: 'Permanent Marker';
+    content: "<h1>";
+    color: #72757e;
+    font-size: 4vw;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+
+}
+
+h1::after {
+    font-family: 'Permanent Marker';
+    content: '</h1>';
+    color: #72757e;
+    position: absolute;
+    font-size: 4vw;
+    top:43%;
+    right: 5%;
+
+}
+
+/* Paragraph setting */
+.top-section-text p{
+    font-family: 'Black Han Sans';
+    font-size: 3vw;
+    color: #94a1b2;
+    margin-top: 9%;
+    margin-left: -25%;
+}
+
+p::before{
+    font-family: 'Permanent Marker';
+    content: "<p>";
+    color: #72757e;
+    position: absolute;
+    font-size: 4vw;
+    top: 45%;
+    left: 8%;
+}
+
+p::after{
+    font-family: 'Permanent Marker';
+    content: "</p>";
+    color: #72757e;
+    position: absolute;
+    font-size: 4vw;
+    top: 50%;
+    left: 8%;
+}
+
+/* button contact */
+.contact-bt{
+    display: flex;
+    justify-content: center;
+}
+.contact-bt button{
+    margin-top: 20%;
+    height: 50px;
+    width: 100%;
+    border: 3px solid #7f5af0;
+    color: white;
+    background-color: transparent;
+}
+
+.contact-bt button:hover {
+    background-color: #2cb67d;
+    border: 3px solid #2cb67d;
+}
+
+/* Image PC */
+.image-pc {
+    display: flex;
+    justify-content: center;
+}
+
+.image-pc img {
+    margin-top: 5%;
+    width: 90%;
+    max-height: auto;
+    z-index: 1;
+}
+

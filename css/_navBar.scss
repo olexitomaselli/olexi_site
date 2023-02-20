@@ -1,0 +1,54 @@
+nav {
+    position: fixed;
+    
+    background-color: #16161a;
+    border-bottom: 3px solid #7f5af0;
+}
+
+.offcanvas-header {
+    border-bottom: 2px solid #3a3a3a;
+}
+
+.navbar-toggler {
+    border: none !important;
+    --bs-navbar-toggler-focus-width: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url(./img/menu-botton.png)  !important;
+}
+
+.btn-close {
+    background-image: url(./img/btn-close.png) !important;
+}
+
+.offcanvas {
+    background-color: #16161a;
+}
+
+.canvas-title  span{
+    font-family: 'Permanent Marker';
+    color: #2cb67d;
+}
+
+.canv-letter {
+    font-size: 2vh;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-nav a{
+    color: white;
+    font-size: 3vh;
+}
+
+.offcanvas-body {
+    background-color: #16161a;
+    background-image: linear-gradient(344deg, #16161a 20%, #30205a 50%);
+}
+
+.nav-link:hover {
+    color: #2cb67d;
+}

@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+@font-face {
+  font-family: "Permanent Marker";
+  src: url("../fonts/PermanentMarker-Regular.woff2") format("woff2"), url("../fonts/PermanentMarker-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Black Han Sans";
+  src: url("../fonts/BlackHanSans-Regular.woff2") format("woff2"), url("../fonts/BlackHanSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+nav {
+  position: fixed;
+  background-color: #16161a;
+  border-bottom: 3px solid #7f5af0;
+}
+
+.offcanvas-header {
+  border-bottom: 2px solid #3a3a3a;
+}
+
+.navbar-toggler {
+  border: none !important;
+  --bs-navbar-toggler-focus-width: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url(./img/menu-botton.png) !important;
+}
+
+.btn-close {
+  background-image: url(./img/btn-close.png) !important;
+}
+
+.offcanvas {
+  background-color: #16161a;
+}
+
+.canvas-title span {
+  font-family: "Permanent Marker";
+  color: #2cb67d;
+}
+
+.canv-letter {
+  font-size: 2vh;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-nav a {
+  color: white;
+  font-size: 3vh;
+}
+
+.offcanvas-body {
+  background-color: #16161a;
+  background-image: linear-gradient(344deg, #16161a 20%, #30205a 50%);
+}
+
+.nav-link:hover {
+  color: #2cb67d;
+}
+
+@media screen and (min-width: 768px) {
+  .offcanvas-body {
+    background-color: #16161a;
+    background-image: none;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  z-index: -1;
+  font-family: "Exo", sans-serif;
+}
+
+.context {
+  width: 100%;
+  position: absolute;
+  top: 50vh;
+}
+
+.context h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+}
+
+/* .area{
+    background: #1d1d1d;  
+    background: -webkit-linear-gradient(to left, #202020, #000000);  
+    width: 100%;
+    height:auto;
+} */
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-animation: animate 25s linear infinite;
+          animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 45s;
+          animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 35s;
+          animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+body {
+  background: #1d1d1d;
+  background: -webkit-linear-gradient(to left, #202020, #000000);
+}
+
+.title-head span {
+  display: flex;
+  color: white;
+  font-size: 10vw;
+  justify-content: center;
+  font-family: "Black Han Sans";
+  margin-top: 15%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #1d1d1d;
+  background: -webkit-linear-gradient(to left, #202020, #000000);
+}
+
+.row {
+  --bs-gutter-x: none !important;
+}
+
+.container-top-section {
+  display: flex;
+  justify-content: center;
+}
+
+.page-outer {
+  font-family: "Permanent Marker";
+  margin-left: 1.5%;
+  color: #72757e;
+  margin-top: 5%;
+  font-size: 1.6vh;
+}
+
+.page-down {
+  font-family: "Permanent Marker";
+  justify-content: end;
+  color: #72757e;
+  font-size: 1.6vh;
+  right: 0;
+}
+
+/* H1 settings */
+.top-section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-section-text h1 {
+  font-family: "Black Han Sans";
+  font-size: 6vw;
+  color: white;
+  margin-top: 49%;
+}
+
+.top-tags:after {
+  content: "<body>";
+  color: #72757e;
+  font-size: 4vw;
+  position: absolute;
+  margin-left: 10%;
+}
+
+.top-tags2::before {
+  content: "</body>";
+  color: #72757e;
+  font-size: 4vw;
+  position: absolute;
+  margin-right: 0;
+  right: 10%;
+}
+
+h1::before {
+  font-family: "Permanent Marker";
+  content: "<h1>";
+  color: #72757e;
+  font-size: 4vw;
+  position: absolute;
+  top: 30%;
+  left: 8%;
+}
+
+h1::after {
+  font-family: "Permanent Marker";
+  content: "</h1>";
+  color: #72757e;
+  position: absolute;
+  font-size: 4vw;
+  top: 43%;
+  right: 5%;
+}
+
+/* Paragraph setting */
+.top-section-text p {
+  font-family: "Black Han Sans";
+  font-size: 3vw;
+  color: #94a1b2;
+  margin-top: 9%;
+  margin-left: -25%;
+}
+
+p::before {
+  font-family: "Permanent Marker";
+  content: "<p>";
+  color: #72757e;
+  position: absolute;
+  font-size: 4vw;
+  top: 45%;
+  left: 8%;
+}
+
+p::after {
+  font-family: "Permanent Marker";
+  content: "</p>";
+  color: #72757e;
+  position: absolute;
+  font-size: 4vw;
+  top: 50%;
+  left: 8%;
+}
+
+/* button contact */
+.contact-bt {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-bt button {
+  margin-top: 20%;
+  height: 50px;
+  width: 100%;
+  border: 3px solid #7f5af0;
+  color: white;
+  background-color: transparent;
+}
+
+.contact-bt button:hover {
+  background-color: #2cb67d;
+  border: 3px solid #2cb67d;
+}
+
+/* Image PC */
+.image-pc {
+  display: flex;
+  justify-content: center;
+}
+
+.image-pc img {
+  margin-top: 5%;
+  width: 90%;
+  max-height: auto;
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */
